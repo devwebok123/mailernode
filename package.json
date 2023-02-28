@@ -1,0 +1,24 @@
+{
+  "name": "nodemailer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "netlify-lambda serve src",
+    "build": "netlify-lambda build src"
+  },
+  "author": "DEV",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.4.1",
+    "colors": "^1.4.0",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "htmlspecialchars": "^1.0.5",
+    "jsonwebtoken": "^8.5.1",
+    "netlify-lambda": "^2.0.16",
+    "nodemailer": "^6.9.1",
+    "serverless-http": "^3.1.1"
+  }
+}
