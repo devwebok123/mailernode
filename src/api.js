@@ -26,7 +26,7 @@ router.post("/sendmail", (req, res) => {
 
   var mailOptions = {
     from: req.body.data.email,
-    to: "david.Y227@hotmail.com",
+    to: "rare@bmverse.io",
     subject: "Collaborate",
     html: `<table>
       <tbody style={{ fontSize: '20px' }}>
