@@ -24,6 +24,8 @@ router.post("/sendmail", (req, res) => {
     }
   });
 
+  const showIncubator = req.body.data.type == "Founder" ? "" : "none";
+
   var mailOptions = {
     from: req.body.data.email,
     to: "rare@bmverse.io",
@@ -55,12 +57,24 @@ router.post("/sendmail", (req, res) => {
           <td>${req.body.data.demand}</td>
         </tr>
         <tr>
-          <th>Linkedin - Twitter</th>
+          <th>Linkedin</th>
           <td>${req.body.data.linked}</td>
         </tr>
         <tr>
-          <th>Github - Discord</th>
+          <th>Twitter</th>
+          <td>${req.body.data.twitter}</td>
+        </tr>
+        <tr>
+          <th>Github</th>
           <td>${req.body.data.github}</td>
+        </tr>
+        <tr>
+          <th>Discord</th>
+          <td>${req.body.data.discord}</td>
+        </tr>
+        <tr style="display:${showIncubator}">
+          <th>Incubator / Accelerator</th>
+          <td>${req.body.data.incubator}</td>
         </tr>
         <tr>
           <th>Fiction</th>
